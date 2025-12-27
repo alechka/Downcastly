@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Downcastly</id>
+    <version>1.0.1</version>
+    <authors>alechka</authors>
+    <readme>docs\README.md</readme>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/alechka/Downcastly</projectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <license type="expression">MIT</license>
+    <description>Typesafe and AOT friendly downcast for c#</description>
+    <dependencies>
+      <dependency id="Downcastly.Attributes" version="1.0.0" />
+      <dependency id="Downcastly.Generators" version="1.0.1" />
+    </dependencies>
+  </metadata>
+  <files>    
+    <file src="..\README.md" target="docs\README.md" />
+  </files>
+</package>

@@ -23,7 +23,7 @@
   <ItemGroup>
     <Using Include="Xunit" />
     <ProjectReference Include="..\Downcastly.Attributes\Downcastly.Attributes.csproj" />
-    <ProjectReference Include="..\Downcastly\Downcastly.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="..\Downcastly.Generators\Downcastly.Generators.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
   </ItemGroup>
 
 </Project>

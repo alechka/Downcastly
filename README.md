@@ -4,7 +4,7 @@ Downcastly is a C# library that provides a safe and efficient way to downcast ob
 constructors for your classes to copy all the properties from the base class to the derived class, ensuring type safety and reducing boilerplate code.
 
 
-#How to use
+## usage example
 ```csharp
     public record ParentRecord
     {
@@ -28,9 +28,24 @@ constructors for your classes to copy all the properties from the base class to 
                 Id = 1,
                 Name = "Parent"
             };
+
             // Safe downcasting using Downcastly
-            ChildRecord child = new (parent) {Status = active};
+            ChildRecord child = new ChildRecord(parent) { Status = "active" };
             Console.WriteLine($"Id: {child.Id}, Name: {child.Name}, Status: {child.Status}");
         }
     }
+```
+
+## installation
+```
+dotnet add package Downcastly
+```
+
+## usefull tips
+
+Add following line to your PropertyGroup of your .csproj file so you can see generated files in your obj folder:
+
+
+```xml
+<CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)\Generated</CompilerGeneratedFilesOutputPath>
 ```
