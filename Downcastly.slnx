@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Downcastly.Attributes/Downcastly.Attributes.csproj" />
+  <Project Path="Downcastly.Tests/Downcastly.Tests.csproj" Id="c89780aa-3e89-4467-a497-3a8a0bdaa568" />
+  <Project Path="Downcastly/Downcastly.csproj" />
+</Solution>
