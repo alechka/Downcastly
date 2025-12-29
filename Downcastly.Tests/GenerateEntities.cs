@@ -109,4 +109,15 @@
     {
         public required string Status { get; init; }
     }
+
+    [Downcast]
+    public partial class ChildWithConstructorCall : ParentClassEntity
+    {
+        public ChildWithConstructorCall(int id, string status) : this(new ParentClassEntity { Id = id })        
+        {
+            Status = status;
+        }
+
+        public string Status { get; }
+    }
 }

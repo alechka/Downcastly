@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Downcastly</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>alechka</authors>
     <readme>docs\README.md</readme>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -12,7 +12,7 @@
     <description>Typesafe and AOT friendly downcast for c#</description>
     <dependencies>
       <dependency id="Downcastly.Attributes" version="1.0.0" />
-      <dependency id="Downcastly.Generators" version="1.0.1" />
+      <dependency id="Downcastly.Generators" version="1.0.2" />
     </dependencies>
   </metadata>
   <files>    
