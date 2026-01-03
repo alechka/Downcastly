@@ -4,9 +4,15 @@ namespace Downcastly;
 
 internal class TypeInfo
 {
-    public bool SetsRequiredMembers { get; internal set; }
+    /// <summary>
+    /// Gets a value indicating whether this member sets all required members during object initialization
+    /// </summary>
+    internal bool SetsRequiredMembers { get; set; }
 
-    public string ConstructorAccessibility { get; internal set; } = "public";
+    /// <summary>
+    /// Constructor accessibility level
+    /// </summary>
+    internal string ConstructorAccessibility { get; set; } = "public";
 
     /// <summary>
     /// Type name
@@ -28,8 +34,14 @@ internal class TypeInfo
     /// </summary>
     internal TypeKind Kind { get; init; } = TypeKind.Class;
 
+    /// <summary>
+    /// Properties that need to be copied
+    /// </summary>
     internal List<string> Properties { get; set; } = [];
 
+    /// <summary>
+    /// Base type name
+    /// </summary>
     internal string BaseName { get; set; } = null!;
     
 }

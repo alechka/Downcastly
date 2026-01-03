@@ -10,9 +10,12 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Authors>alechka</Authors>
     <PackageTags>downcast downcastly</PackageTags>
-    <Version>1.0.0</Version>
+    <Version>1.0.3</Version>
     <PackageProjectUrl>https://github.com/alechka/Downcastly</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
-  
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
 </Project>

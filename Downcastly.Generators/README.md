@@ -1,0 +1,1 @@
+﻿This project contains code generators for Downcastly, a library for downcasting types in C#.

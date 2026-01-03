@@ -49,3 +49,9 @@ Add following line to your PropertyGroup of your .csproj file so you can see gen
 ```xml
 <CompilerGeneratedFilesOutputPath>$(BaseIntermediateOutputPath)\Generated</CompilerGeneratedFilesOutputPath>
 ```
+
+## why not to use AutoMapper, Mapster or similar libraries instead?
+Those libraries are great for mapping between different types, but with that strenth comes complexity. It's easy to 
+start using them not only for downcasting but also for other mapping scenarios, which can lead to 
+overcomplication of your codebase, complicated configurations, unnecessary abstractions, and debudding overhead. 
+We all know that using mappers is very easy until it suddenly becomes really hard.
